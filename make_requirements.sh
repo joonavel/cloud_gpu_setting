@@ -1,0 +1,1 @@
+pip list --not-required | awk 'NR>2 {print $1"=="$2}' > requirements.txt
